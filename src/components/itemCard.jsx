@@ -8,7 +8,11 @@ const Itemcard = (props )=>{
             <h3>{props.title}</h3>
             <p>{props.des}</p>
             <h3>{props.price}</h3>
-            <AddItem/>
+            <AddItem
+                cb = {()=>{
+                    props.itemId
+                }}
+            />
         </div>
     )
 }

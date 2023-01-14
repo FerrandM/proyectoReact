@@ -1,0 +1,56 @@
+
+.nav-sup{
+    height: 100%;
+    width: 100%;
+}
+
+.nav-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-sup ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    height: 100%;
+}
+
+
+.nav-sup ul a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 25%;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 17px;
+    background-color: #282c34;
+}
+
+
+
+@media (width < 1060px){
+    .nav-div{
+        grid-area: nav;
+        height: 20px;
+        width: 30px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+

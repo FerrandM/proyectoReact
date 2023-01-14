@@ -1,20 +1,28 @@
 import './App.css';
-import NavItem from './components/navItems';
-import CartNlist from './components/cartlist';
+import Nav from './components/nav';
+import ProductList from './components/productList'; 
+import ProductPages from './components/productsPage';
+import Home from './pages/home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Superior from './pages/superior';
+import Inferior from './pages/inferior';
+import Zapatillas from './pages/zapatillas'
+import Carrito from './pages/carrito';
+
 
 function App() {
   return (
-    <div>
-      <header>
-        <div id='logo'><h1>LOGO</h1></div>
-        <hr />
-        <nav>
-          <NavItem seleccion="Inicio"/>
-          <NavItem seleccion="Productos"/>
-          <NavItem seleccion="Contactos"/>
-          <CartNlist/>
-        </nav>
-      </header>
+    <div className='App'>
+      <BrowserRouter>
+        <Nav></Nav>  
+        <Routes>
+          <Route exact path='/' element={<Home/>} />
+          <Route path='superior' element={<Superior/>} />
+          <Route path='inferior' element={<Inferior/>} />
+          <Route path='zapatillas' element={<Zapatillas/>} />
+          <Route path='carrito' element={<Carrito/>} />
+        </Routes>
+      </BrowserRouter>  
     </div>
   );
 }

@@ -3,7 +3,7 @@
 
 const AddItem = (cb) => {
     return(
-        <button onClick={()=>{cb}} className='agregarItem'> Agregar artículo</button>
+        <button onClick={()=>{console.log('agregar este articulo')}} className='agregarItem'> Agregar artículo</button>
     )
 }
 

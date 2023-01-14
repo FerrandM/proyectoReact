@@ -9,9 +9,9 @@ const Itemcard = (props )=>{
             <p>{props.des}</p>
             <h3>{props.price}</h3>
             <AddItem
-                cb = {()=>{
-                    props.itemId
-                }}
+                // cb = {()=>{
+                //     props.itemId
+                // }}
             />
         </div>
     )
